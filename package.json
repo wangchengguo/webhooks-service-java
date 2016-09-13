@@ -6,6 +6,7 @@
     "github-webhook-handler": "^0.6.0"
   },
   "devDependencies": {
+    "github-webhook-handler": "^0.6.0",
     "gulp": "^3.9.1"
   }
 }
