@@ -6,6 +6,7 @@ var handler = createHandler({ path: '/web-hooks', secret: 'l34ktk2k2323' })
 var env = require('./env')
 
 function run_cmd(cmd, args, callback) {
+	console.log(333);
     var spawn = require('child_process').spawn;
     var child = spawn(cmd, args);
     var resp = "";
