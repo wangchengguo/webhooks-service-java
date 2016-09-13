@@ -31,8 +31,13 @@ handler.on('push', function (event) {
         event.payload.ref);
     var rep_name = event.payload.repository.name;
     var ref = event.payload.ref;
+	console.log('配置name='+env.repository_name);
+	console.log('配置ref='+env.ref);
+	console.log(rep_name == env.repository_name);
     if(rep_name == env.repository_name){
+		console.log(11111111);
         if(ref == env.ref){
+			console.log(222222222);
             run_cmd('sh', ['./share.sh'], function(text){ console.log(text) });
         }
     }

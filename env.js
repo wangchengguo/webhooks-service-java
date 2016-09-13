@@ -1,4 +1,4 @@
 module.exports = {
-    ref : 'refs/heads/test',
-    repository_name : 'tuboshi'
+    ref : 'refs/heads/master',
+    repository_name : 'service-jar'
 }
