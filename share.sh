@@ -11,10 +11,10 @@ bootsh=/home/app/agent-sh
 echo "开始拉取服务"
 cd $GIT_PATH
 echo "拉取代码中..."
-# git reset --hard origin/master
-# git clean -f
-# git pull
-# git checkout test
+git reset --hard origin/master
+git clean -f
+git pull
+git checkout test
 echo "拉取完成!!!"
 echo "开始打包..."
 gulp --buildtype debug
